@@ -1,0 +1,480 @@
+*{
+    box-sizing: border-box;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    margin:0; 
+    padding:0; 
+}
+
+h1, h2{
+font-family:'DM Serif Display', 'Arial Narrow', Arial, sans-serif;
+font-size: 40px;
+line-height: 0.9;
+}
+
+a{
+    text-decoration: none;
+    color:black; 
+}
+
+body{
+    background-color: white;
+    margin:0;
+    padding:0;
+   
+}
+
+.divided{
+    height:300px; 
+    width:auto; 
+
+}
+
+button{
+    width:140px;
+    height:40px;
+    margin:auto; 
+    border-radius: 50px;  
+    background-color:whitesmoke; 
+    text-transform: uppercase;
+    color:rgb(39, 39, 39);
+    border: transparent;
+    box-shadow: rgb(152, 151, 151) 1px 1px 2px;
+}
+
+/* HOME */
+header{
+    background-color: rgb(180, 208, 206);
+    width:100%;
+    height:100%; 
+}
+
+.family{
+    /* border:3px dashed purple; */
+    height:100%; 
+    width:auto;
+    display:flex; 
+    flex-direction:column;
+}
+
+.textdiv{
+    flex-basis: 100%;
+    margin:auto; 
+    margin-top:60px;
+    margin-bottom:10px;
+    padding:10px 10px;
+    text-align: left;
+}
+.textdiv h1{
+    white-space: nowrap;
+    margin-top:20px; 
+}
+
+.textdiv p{
+    margin-top:20px;
+    width:100%;
+}
+
+.textdiv p span{
+    color:white;
+}
+
+
+.lowerblock{
+    /* border:1px dashed red;  */
+    display:flex;
+    flex-direction: row;
+    flex:1;
+}
+
+.buttoncontainer{
+    display: flex;  
+    border:1px dashed red; 
+}
+
+.buttoncontainer button{
+  
+   position: relative;
+   visibility:hidden; 
+}
+
+.filler{
+    margin:10px;
+    border: 1px solid black;
+    width:20px;
+}
+
+.imagecontainer{
+    flex:1 1 100%;
+    /* border:1px dashed red;  */
+    height:auto;
+    display: flex;
+    border:1px dashed red; 
+    
+}
+
+.imagecontainer img{
+    max-width:300;
+    max-height: 300px;
+    margin: auto; 
+    margin-bottom:0; 
+    
+    position: relative;
+    right:100px; 
+    
+}
+/* LEARNMORE */
+
+.learnmore{
+    background-color:tomato;
+    color:white;
+    padding:auto;
+    display:flex; 
+}
+
+.texttogether{
+    margin:auto;
+    text-align: center;
+}
+
+/* JOINTODAY */
+
+.jointoday{
+    background-color: rgb(213, 182, 6);
+    color:white;
+    display:flex; 
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+/* NAV */
+
+.navsection{
+    width:100%;
+    background-color: white;
+    display: none;
+}
+.navsection ul{
+    text-align: center;
+    width:100%; 
+    /* border:1px dashed blue;  */
+    
+}
+
+.navsection a{
+    color:rgb(59, 59, 59); 
+}
+
+.navsection a:hover{
+    color:black; 
+}
+
+.navsection ul li{
+    display:inline-block;
+    margin:10px 80px;
+    /* border:1px dashed blue;  */
+}
+
+/* SAFETY */
+
+.safetysection{
+    background-color: rgb(171, 163, 163);
+    display:flex;
+    flex-direction: column;
+    padding:0px;
+    height:auto;
+    padding:0px; 
+}
+.safetysection h1{
+    color:white; 
+}
+
+.textbutton{
+    margin:50px 50px;
+    
+}
+
+.textbutton button{
+    display:none; 
+    margin-top:0px;
+}
+
+.paragraph{
+    margin:0px 50px;
+}
+
+
+/* PEOPLE */
+
+.peoplecontainer{
+    flex:1 1 100%;
+    margin-bottom:40px;
+    margin-top:70px;
+    display:flex;
+    flex-direction: row;
+    flex-flow:row wrap;
+    background-color:rgb(171, 163, 163);
+    
+}
+
+.whitecontainer{
+    width: 30%;
+    height:300px;
+    margin:30px 50px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding:20px;
+    flex:1;
+    text-align: center;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: rgb(154, 155, 155) 2px 1px 10px;
+}
+
+
+.whitecontainer h6{
+    text-align: center;
+    margin-bottom:10px;
+    font-size: 15px;
+}
+
+.whitecontainer p{
+    font-size: 12px;
+    color:grey;
+    margin-bottom:20px;
+}
+
+.slightlyovercontainer{
+    background-color: teal;
+    border-radius: 5px;
+    position: relative;
+    bottom:30%;
+    height:150px;
+    overflow: hidden;
+    display:flex;
+    width:90%;
+    margin:auto; 
+}
+
+.slightlyovercontainer img{
+    margin:auto;
+    
+    position: relative;
+    top:20px;
+}
+
+.whitecontainer:first-child img{
+    position: relative;
+    right:5px;
+    max-width: 100px;
+    max-height:auto;
+}
+
+.a-color{
+    background-color:lightblue;
+}
+
+.b-color{
+    background-color: orange;
+}
+
+.b-color img{
+    max-width: 100px;
+    max-height:auto;
+}
+
+.c-color{
+    background-color:rgb(230, 126, 67);
+}
+.c-color img{
+    max-width: 180px;
+}
+
+/* ABOUT */
+
+.aboutsection{
+    display:flex;
+    flex-direction: column;
+    
+    background-color: orange;
+    padding-top: 80px;
+    padding-bottom:20px;
+    height: auto;
+}
+
+.aboutsection h1 {
+    flex: 1 1 100%;
+    text-align:center;
+    color:white;  
+    
+}
+
+.about-text{
+    
+    flex: 1 1 100%;
+    padding:20px; 
+    
+    margin:20px 80px; 
+}
+
+/* GRID */
+
+.gridsection{
+    display:grid; 
+    height:800px;
+    grid-template-areas: 'auto';    
+}
+
+.gridsection div{
+    display:flex; 
+    grid-area: 100%;
+    font-size: 50px;
+    
+}
+
+.gridsection div div{
+    margin:auto;
+    font-size: 20px;
+    position: relative;
+    right:20px; 
+}
+
+.how{
+    background-color: rgb(203, 227, 235);
+    text-indent: 50px;
+    font-size: 30px;
+}
+.two{
+    background-color: rgb(226, 214, 214);
+    white-space: nowrap;
+}
+.three{
+    white-space: nowrap;
+}
+
+.four{
+    background-color: rgb(236, 108, 48);
+}
+.numbering{
+    font-family:'Times New Roman', Times, serif; 
+    color:grey;
+    margin:10px 20px;
+}
+
+ /* GOBACK */
+ .goback{
+    display:flex;
+    flex-direction: column;
+    height:50px;
+    width:100%;
+    text-align:center;
+    background-color: grey;
+}
+
+.goback > *{
+    margin:auto; 
+}
+
+
+@media screen and (min-width:1200px){
+   
+    header{
+        display:flex;
+        flex-direction:row;  
+        
+        height:600px; 
+    }
+    
+    .divided{
+        width:auto;
+        height:auto; 
+    }
+
+    
+    .textdiv{
+        width:60%;
+    }
+
+    .family{
+      height:600px;  
+      width:50%;
+    }
+    
+    .twosplit{
+       
+        display:flex;
+        flex-direction: column;
+        width:50%; 
+    }
+    
+    .learnmore, .jointoday{
+        flex:1; 
+    }
+    
+    .navsection{
+        display: inline-block;
+    }
+
+    .textbutton button{
+        display:inline-block; 
+    }
+
+    .safetysection{
+        height:540px;
+    }
+
+    .people{
+        flex-direction:column-reverse;
+        justify-content:start;
+    }
+
+    .peoplecontainer{
+        background-color: transparent;
+       
+    }
+
+    .aboutsection{
+        padding:200px; 
+    }
+
+    .gridsection{
+        grid-template-areas: 'auto auto auto' 'auto auto auto' ;
+    }
+
+    .imagecontainer img{
+        position: relative;
+        left:60px;
+    }
+     
+    .buttoncontainer button{
+        visibility: visible;
+        bottom:30px; 
+        left:170px;
+    }
+
+
+   
+
+    /* .safetysection{
+        flex-direction: row;
+        height:auto;
+        
+    }
+
+    .textbutton{
+        flex:1;
+        width:50%;
+    }
+
+    .paragraph{
+        flex:1;
+        width:50%;
+    }
+
+    .peoplecontainer{
+        width: 100%;
+    } */
+
+
+}
