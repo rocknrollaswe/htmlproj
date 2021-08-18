@@ -326,16 +326,17 @@ header{
 
 .gridsection div{
     display:flex; 
-    grid-area: 100%;
-    font-size: 50px;
-    
+    grid-area: 100%; 
 }
 
 .gridsection div div{
     margin:auto;
-    font-size: 20px;
+    text-align: center;
+    font-size: 15px;
     position: relative;
     right:20px; 
+   
+    
 }
 
 .how{
@@ -344,7 +345,7 @@ header{
     font-size: 30px;
 }
 .two{
-    background-color: rgb(226, 214, 214);
+    background-color: rgb(241, 230, 230);
     white-space: nowrap;
 }
 .three{
@@ -352,12 +353,19 @@ header{
 }
 
 .four{
-    background-color: rgb(236, 108, 48);
+    background-color: rgb(216, 103, 51);
 }
+
+.four .numbering{
+    color:saddlebrown;
+}
+
 .numbering{
     font-family:'Times New Roman', Times, serif; 
-    color:grey;
+    color:rgb(174, 174, 174);
     margin:10px 20px;
+    font-size: 50px;
+    font-weight:bold;
 }
 
  /* GOBACK */
