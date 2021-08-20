@@ -3,6 +3,7 @@
     font-family: Roboto, Arial, Helvetica, sans-serif;
     margin:0; 
     padding:0; 
+    
 }
 
 h1, h2{
@@ -20,15 +21,12 @@ body{
     background-color: white;
     margin:0;
     padding:0;
-    width:100vw;
     
-   
 }
 
 .divided{
     height:300px; 
     width:auto; 
-
 }
 
 button{
@@ -45,86 +43,74 @@ button{
 
 /* HOME */
 header{
-    background-color: rgb(180, 208, 206);
     width:100%;
-    height:100%; 
+    height:100%;   
 }
 
-.family{
-    /* border:3px dashed purple; */
+.family{ 
+    background-color: rgb(180, 208, 206);
     height:100%; 
-    width:auto;
-    display:flex; 
-    flex-direction:column;
+    max-width:100%;
+    display:flex;
+    flex-direction: column;
 }
 
 .textdiv{
-    flex-basis: 100%;
-    margin:auto; 
-    margin-top:60px;
-    margin-bottom:10px;
-    padding:10px 10px;
-    text-align: left;
-}
-.textdiv h1{
-    white-space: nowrap;
-    margin-top:20px; 
+    flex-basis:0 0 50%;
+    min-width: 100%;
+    max-height: 50%;
+    margin:0;
+    margin-top:90px;
+    /* outline:2px dashed darkgreen; */
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
 }
 
-.textdiv p{
-    margin-top:20px;
-    width:100%;
+.textdiv button{
+   position: relative;
+   top:7em;
+   right:7em;
+   margin:0;
+   width:110px;
+   height:30px;
+}
+
+.textdiv h1, p{
+    padding:10px 30px;
+    
 }
 
 .textdiv p span{
-    color:white;
+    color:rgb(245, 243, 243);
 }
-
 
 .lowerblock{
-    /* border:1px dashed red;  */
-    display:flex;
-    flex-direction: row;
-    flex:1;
-}
-
-.buttoncontainer{
-    display: flex;  
     
-}
-
-.buttoncontainer button{
-  
-   position: relative;
-   visibility:hidden; 
-}
-
-.filler{
-    margin:10px;
-    border: 1px solid black;
-    width:20px;
+    display:flex;
+    justify-content: center;
+    
 }
 
 .imagecontainer{
-    flex:1 1 100%;
-    /* border:1px dashed red;  */
-    height:auto;
-    display: flex;
-    
-}
-
-.imagecontainer img{
-    max-width:300;
-    max-height: 300px;
-    margin: auto; 
-    margin-bottom:0; 
-    
+   
     position: relative;
-    right:90px; 
+    left:3em;
+    overflow: hidden;
+}
+.imagecontainer img{
+    max-width: 280px;
+    max-height: 280px;
+    min-width: 260px;
+    min-height: 260px; 
+    margin-bottom:-5px; 
+    position: relative;
     
 }
-/* LEARNMORE */
 
+/* LEARNMORE */
 .learnmore{
     background-color:tomato;
     color:white;
@@ -138,18 +124,15 @@ header{
 }
 
 /* JOINTODAY */
-
 .jointoday{
     background-color: rgb(218, 181, 18);
     color:white;
     display:flex; 
     flex-direction: column;
     align-items: center;
-    
 }
 
 /* NAV */
-
 .navsection{
     width:100%;
     background-color: white;
@@ -159,7 +142,6 @@ header{
     text-align: center;
     width:100%; 
     /* border:1px dashed blue;  */
-    
 }
 
 .navsection a{
@@ -177,7 +159,6 @@ header{
 }
 
 /* SAFETY */
-
 .safetysection{
     background-color: rgb(171, 163, 163);
     display:flex;
@@ -185,11 +166,9 @@ header{
     justify-content:space-evenly;
     padding:5em;
     padding-bottom:6em;
-    
 }
 
-.safetysection div{  
-     
+.safetysection div{   
     max-width: 100%;
     min-width: 50%; 
 }
@@ -214,9 +193,7 @@ header{
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-    background:linear-gradient(180deg, rgb(171, 163, 163) 50%,  rgb(171, 163, 163) 50%);
-    
-    
+    background:linear-gradient(180deg, rgb(171, 163, 163) 50%,  rgb(171, 163, 163) 50%);  
 } 
 
 .whitecontainer{
@@ -310,7 +287,6 @@ header{
 }
 
 .about-text{
-    
     flex: 1 1 100%;
     margin:20px 50px; 
 }
@@ -394,8 +370,7 @@ header{
     header{
         display:flex;
         flex-direction:row;  
-        
-        height:600px; 
+        height:100%; 
     }
     
     .divided{
@@ -405,11 +380,11 @@ header{
 
     
     .textdiv{
-        width:60%;
+        width:100%;
     }
 
     .family{
-      height:600px;  
+      height:100%;  
       width:50%;
     }
     
@@ -440,9 +415,7 @@ header{
 
     .peoplecontainer{
         width:100%;
-        
-        background:linear-gradient(180deg, rgb(171, 163, 163) 50%, orange 50%);
-       
+        background:linear-gradient(180deg, rgb(171, 163, 163) 50%, orange 50%); 
     }
 
     .whitecontainer{
@@ -457,36 +430,6 @@ header{
         grid-template-areas: 'auto auto auto' 'auto auto auto' ;
     }
 
-    .imagecontainer img{
-        position: relative;
-        left:60px;
-    }
-     
-    .buttoncontainer button{
-        visibility: visible;
-        bottom:30px; 
-        left:170px;
-    }
-
-    /* .safetysection{
-        flex-direction: row;
-        height:auto;
-        
-    }
-
-    .textbutton{
-        flex:1;
-        width:50%;
-    }
-
-    .paragraph{
-        flex:1;
-        width:50%;
-    }
-
-    .peoplecontainer{
-        width: 100%;
-    } */
-
-
+   
+    
 }

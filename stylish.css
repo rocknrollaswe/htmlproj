@@ -36,16 +36,9 @@ body{
     
 }
 
-
-
-
-
-
-
 /* HEADER PART */
 header{
     display:flex;
-    justify-content:space-evenly;
     height:300px;
     background-color:rgb(207, 235, 233);
     margin:0;
@@ -57,11 +50,8 @@ header{
 }
 
 div.item{
-    
     width:auto;
-    display:flex;
-     
-    
+    display:flex;   
 }
 
 .hello h1{
@@ -74,7 +64,6 @@ div.item{
     width:100%; 
     font-size: 40px;
     height:200px; 
-    
     text-align:left;
     white-space: nowrap;
 }
@@ -157,9 +146,6 @@ li:hover{
     margin-left:20px;
 }
 
-
-
-
 .desktop{
     display:none;
 
@@ -174,9 +160,7 @@ li:hover{
     top:950px;
     right:60px;
     padding:10px 30px;
-    
 }
-
 .location{
     background-color: black;
     background-image: url(assets/map.png);
