@@ -21,6 +21,7 @@ body{
     margin:0;
     padding:0;
     width:100vw;
+    
    
 }
 
@@ -346,10 +347,8 @@ header{
     left:10px;
     top:10px;
     color:slategray;
-    font-family:'Lora';
+    font-family:'DM Sans Serif';
 }
-
-
 .gridsection .four::before{
     color:saddlebrown;
 }
@@ -369,10 +368,6 @@ header{
 
 .four{
     background-color: rgb(216, 103, 51);
-}
-
-.four::before{
-    color:rgb(132, 100, 77);
 }
 
 .numbering{
