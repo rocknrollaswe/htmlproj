@@ -287,11 +287,7 @@ header{
 .whitecontainer p{
     font-size: 12px;
     color:grey;
-    
-   
 }
-
-
 
 /* ABOUT */
 
@@ -349,7 +345,13 @@ header{
     position:relative;
     left:10px;
     top:10px;
-    color:slategray
+    color:slategray;
+    font-family:'Lora';
+}
+
+
+.gridsection .four::before{
+    color:saddlebrown;
 }
 
 .how{
@@ -369,8 +371,8 @@ header{
     background-color: rgb(216, 103, 51);
 }
 
-.four .counterbox{
-    color:saddlebrown;
+.four::before{
+    color:rgb(132, 100, 77);
 }
 
 .numbering{
